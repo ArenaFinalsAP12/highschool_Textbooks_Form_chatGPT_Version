@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textbook Order Form</title>
+</head>
+<body>
+    <form id="orderForm">
+        <!--Remember to try and review in HTML textbook how clicking <label> elements works-->
+        <h2>Order Textbooks</h2>
+        <h3>Math Textbooks</h3>
+        <label for="geometry">Geometry Textbook:</label>
+        <input type="number" id="geometry" name="textbook1" min="0" max="5"><br>
+        <label for="algebra2">Algebra 2 Textbook:</label>
+        <input type="number" id="algebra2" name="textbook2" min="0" max="5"><br>
+        <label for="precalculus">Precalculus Textbook:</label>
+        <input type="number" id="precalculus" name="textbook3" min="0" max="5"><br>
+        <label for="calculus">Calculus Textbook:</label>
+        <input type="number" id="calculus" name="textbook4" min="0" max="5"><br>
+        <h3>Science Textbooks</h3>
+        <label for="physScience">Physical Science Textbook:</label>
+        <input type="number" id="physScience" name="textbook5" min="0" max="5"><br>
+        <label for="biology">Biology Textbook:</label>
+        <input type="number" id="biology" name="textbook6" min="0" max="5"><br>
+        <label for="chemistry">Chemistry Textbook:</label>
+        <input type="number" id="chemistry" name="textbook7" min="0" max="5"><br>
+        <label for="physics">Physics Textbook:</label>
+        <input type="number" id="physics" name="textbook8" min="0" max="5"><br>
+        <h3>History Textbooks</h3>
+        <label for="wldHistEast">World History East Textbook:</label>
+        <input type="number" id="wldHistEast" name="textbook9" min="0" max="5"><br>
+        <label for="wldHistWest">World History West Textbook:</label>
+        <input type="number" id="wldHistWest" name="textbook10" min="0" max="5"><br>
+        <label for="ushistory">US History Textbook:</label>
+        <input type="number" id="ushistory" name="textbook11" min="0" max="5"><br>
+
+        <h2>Payment Information</h2>
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required><br>
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="text" id="expiryDate" name="expiryDate" required><br>
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required><br>
+
+        <button type="submit">Submit Order</button>
+    </form>
+
+    <div id="responseMessage"></div>
+
+    <script src="formHandler.js"></script>
+</body>
+</html>
