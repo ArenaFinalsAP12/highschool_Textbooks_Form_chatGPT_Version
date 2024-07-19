@@ -4,39 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Textbook Order Form Edited (Regular Expressions and Windows)</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <fieldset>
+        <p id="p1" class="odd">Please remember there is a strict limit of 5 textbooks per subject!</p>
+        <p id="p2" class="even">After you submit your order, the pop-up window will list every textbook that you
+        order as textbook1 corresponds to Geometry, textbook2 corresponds to Algebra 2 and so on.</p>
+        <p id="p3" class="odd">We do not sell any textbooks for Literature or Foreign Language classes.</p>
+        <p id="p4" class="even">Please consult your child's guidance counselor for help selecting courses.</p>
+
+        <h2><b>Recommended Schedule by Grade Level</b></h2>
+        <table bgcolor="green" width="800">
+            <td bgcolor="grey">
+                <th scope="col" width="200">Freshman (9th Grade)</th>
+                <th scope="col" width="200">Sophomore (10th Grade)</th>
+                <th scope="col" width="200">Junior (11th Grade)</th>
+                <th scope="col" width="200">Senior (12th Grade)</th>
+            </td>
+            <tr bgcolor="lightpink" align="center">
+                <th scope="row">Mathematics</th>
+                <td>Geometry, Geometry Honors</td>
+                <td>Algebra 2, Algebra 2 Honors (with Trigonometry)</td>
+                <td>Precalculus, Precalculus Honors, Precalculus with Limits</td>
+                <td>Calculus, AB Calculus, BC Calculus</td>
+            </tr>
+            <tr bgcolor="lightblue" align="center">
+                <th scope="row">Science</th>
+                <td>Physical Science</td>
+                <td>Biology</td>
+                <td>Chemistry, Chemistry Honors</td>
+                <td>Physics, AP Biology, AP Chemistry</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <th scope="row">History</th>
+                <td>World History East, World History East Honors</td>
+                <td>World History West, Humanities</td>
+                <td>US History 1, AP US History 1</td>
+                <td>US History 2, AP US History 2</td>
+            </tr>
+        </table>
+    </fieldset>
     <form id="orderForm">
         <h2>Order Textbooks</h2>
-        <p>Please remember there is a strict limit of 5 textbooks per subject!</p>
-        <p>After you submit your order, the pop-up window will list every textbook that you
-        order as textbook1 corresponds to Geometry, textbook2 corresponds to Algebra 2 and so on.</p>
+        <div style="background-color: rgb(52, 210, 235);">
         <h3>Math Textbooks</h3>
-        <label for="geometry">Geometry Textbook:</label>
-        <input type="number" id="geometry" name="textbook1" min="0" max="5"><br>
-        <label for="algebra2">Algebra 2 Textbook:</label>
-        <input type="number" id="algebra2" name="textbook2" min="0" max="5"><br>
-        <label for="precalculus">Precalculus Textbook:</label>
-        <input type="number" id="precalculus" name="textbook3" min="0" max="5"><br>
-        <label for="calculus">Calculus Textbook:</label>
-        <input type="number" id="calculus" name="textbook4" min="0" max="5"><br>
+        <a href="https://www.amazon.com/Geometry-Grades-9-12-Mcdougal-Mcdougal/dp/0618250220">
+            Geometry, Grades 9-12: Mcdougal Littell High School</a><br>
+            <label for="geometry">Geometry Textbook:</label>
+            <input type="number" id="geometry" name="textbook1" min="0" max="5">
+            <img src="images教科書/GeometryMcDougal.jpg" height="200" alt="Geometry Textbook"><br>
+        <a href="https://www.amazon.com/Glencoe-Algebra-2-McGraw-Hill-Education/dp/0078656096/">
+            Glencoe Mathematics Algebra 2</a><br>
+            <label for="algebra2">Algebra 2 Textbook:</label>
+            <input type="number" id="algebra2" name="textbook2" min="0" max="5">
+            <img src="images教科書/Algebra2Glencoe.jpg" height="200" alt="Algebra 2 Textbook"><br>
+        <a href="https://www.amazon.com/Precalculus-Student-ADVANCED-MATH-CONCEPTS/dp/007664183X">
+            Glencoe Mathematics Precalculus, Student Edition</a><br>
+            <label for="precalculus">Precalculus Textbook:</label>
+            <input type="number" id="precalculus" name="textbook3" min="0" max="5">
+            <img src="images教科書/PrecalculusGlencoe.png" height="200" alt="Precalculus Textbook"><br>
+        <a href="https://www.amazon.com/Calculus-Single-Variable-Seventh/dp/0618149163">
+            Calculus of a Single Variable, Seventh Edition</a><br>
+            <label for="calculus">Calculus Textbook:</label>
+            <input type="number" id="calculus" name="textbook4" min="0" max="5">
+            <img src="images教科書/CalculusSingleVariable.jpg" height="200" alt="Calculus Textbook"><br>
+        </div>
+            <hr>
+        <div style="background-color:turquoise;">
         <h3>Science Textbooks</h3>
-        <label for="physScience">Physical Science Textbook:</label>
-        <input type="number" id="physScience" name="textbook5" min="0" max="5"><br>
-        <label for="biology">Biology Textbook:</label>
-        <input type="number" id="biology" name="textbook6" min="0" max="5"><br>
-        <label for="chemistry">Chemistry Textbook:</label>
-        <input type="number" id="chemistry" name="textbook7" min="0" max="5"><br>
-        <label for="physics">Physics Textbook:</label>
-        <input type="number" id="physics" name="textbook8" min="0" max="5"><br>
+        <a href="https://amazon.com/Prentice-Hall-Physical-Science-Concepts/dp/0131663054">
+            Prentice Hall Physical Science Concepts in Action</a><br>
+            <label for="physScience">Physical Science Textbook:</label>
+            <input type="number" id="physScience" name="textbook5" min="0" max="5">
+            <img src="images教科書/PhysicalSciencePrenticeHall.jpg" height="200" alt="Physical Science Textbook"><br>
+        <a href="https://www.amazon.com/Miller-Levine-Biology-Level-Student/dp/0133669513">
+            Miller & Levine Biology 2010 Student Edition</a><br>
+            <label for="biology">Biology Textbook:</label>
+            <input type="number" id="biology" name="textbook6" min="0" max="5">
+            <img src="images教科書/MillerLevineBiology.jpg" height="200" alt="Biology Textbook"><br>
+        <a href="https://www.amazon.com/Prentice-Hall-Chemistry-Antony-Wilbraham/dp/0558216145">
+            Prentice Hall Chemistry</a><br>
+            <label for="chemistry">Chemistry Textbook:</label>
+            <input type="number" id="chemistry" name="textbook7" min="0" max="5">
+            <img src="images教科書/ChemistryPrenticeHall.jpg" height="200" alt="Chemistry Textbook"><br>
+        <a href="https://www.amazon.com/Hmh-Physics-Raymond-Ph-D-Serway/dp/0544817737/ref=asc_df_0544817737/?tag=hyprod-20&linkCode=df0&hvadid=692875362841&hvpos=&hvnetw=g&hvrand=10548649550531186589&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9003619&hvtargid=pla-2281435177418&psc=1&mcid=adcd4853d4133303bfe8496340790794&hvocijid=10548649550531186589-0544817737-&hvexpln=73&gad_source=1">
+            Houghton Mifflin Physics</a><br>
+            <label for="physics">Physics Textbook:</label>
+            <input type="number" id="physics" name="textbook8" min="0" max="5">
+            <img src="images教科書/PhysicsTextbook.jpg" height="200" alt="Physics Textbook"><br>
+        </div>
+            <hr>
+        <div style="background-color: #fffacd;">
         <h3>History Textbooks</h3>
-        <label for="wldHistEast">World History East Textbook:</label>
-        <input type="number" id="wldHistEast" name="textbook9" min="0" max="5"><br>
-        <label for="wldHistWest">World History West Textbook:</label>
-        <input type="number" id="wldHistWest" name="textbook10" min="0" max="5"><br>
-        <label for="ushistory">US History Textbook:</label>
-        <input type="number" id="ushistory" name="textbook11" min="0" max="5"><br>
-
+        <a href="https://www.amazon.com/World-Cultures-Global-Mosaic-5th/dp/0130368954/ref=pd_lpo_sccl_1/133-8476920-7011221?pd_rd_w=gZyDU&content-id=amzn1.sym.951f76ab-04d4-4f39-8b56-d60efcd31a22&pf_rd_p=951f76ab-04d4-4f39-8b56-d60efcd31a22&pf_rd_r=0M9NSPPK8WWTN60WT1J4&pd_rd_wg=exKmM&pd_rd_r=7703d054-91f3-4707-87c3-ba941fcfdcbf&pd_rd_i=0130368954&psc=1">
+            Prentice Hall World Cultures A Global Mosaic</a><br>
+            <label for="wldHistEast">World History East Textbook:</label>
+            <input type="number" id="wldHistEast" name="textbook9" min="0" max="5">
+            <img src="images教科書/WorldCulturesEast.jpg" height="200" alt="World History East Textbook"><br>
+        <a href="https://www.amazon.com/PRENTICE-WORLD-HISTORY-STUDENT-SURVEY/dp/0131299719">
+            Prentice Hall World History</a><br>
+            <label for="wldHistWest">World History West Textbook:</label>
+            <input type="number" id="wldHistWest" name="textbook10" min="0" max="5">
+            <img src="images教科書/WorldHistoryWest.jpg" height="200" alt="World History West Textbook"><br>
+        <a href="https://www.amazon.com/Americas-Student-2007-MCDOUGAL-LITTEL/dp/0618689850">
+            The Americas (US History 1 & 2)</a><br>    
+            <label for="ushistory">US History Textbook:</label>
+            <input type="number" id="ushistory" name="textbook11" min="0" max="5">
+            <img src="images教科書/TheAmericas.jpg" height="200" alt="US History Textbook"><br>
+        </div>
+            <hr>
         <h2>Payment Information</h2>
         <label for="cardNumber">Card Number (Must be between 8 and 16 digits, no spaces or hyphens):</label>
         <input type="password" id="cardNumber" name="cardNumber" required><br>

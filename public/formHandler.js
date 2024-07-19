@@ -70,7 +70,9 @@ document.getElementById('orderForm').addEventListener('submit', async function(e
 
         if (response.ok) {
             // Clear the form after successful submission
-            event.target.reset();
+            setTimeout(()=> {
+                event.target.reset();
+            }, 3000); // Adjust the delay as needed
         } 
     } catch (error) {
         document.getElementById('responseMessage').textContent = `Error: ${error.message}`;
